@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <a href="#seccion1"><img src="imgs/logoonegativoo.png" ></a>
+
+                
+            </div>
+            <ul>
+                <li><a href="#seccion3">Fotografía</a></li>
+                <li><a href="#seccion4">Ilustración</a></li>
+                <li><a href="#seccion5">logotipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="seccion1">
+            <div class="wrap">
+
+                <div class="imagenes"> 
+                    <a href="#" target="_blank"><img src="imgs/logopositivoo.png" alt=""></a>
+                 </div> 
+
+                <div class="texto1">
+                 <h1>!Bienvenido a mi portafolio!</h1>
+
+                <p>Através de este sitio podras ver una recopilación de mis trabajos realizados como diseñador gráfico.  Gracias por visitar.</p>
+                    
+                </div>
+            </div>
+    </section>
+
+
+    <section class="trabajos" id="seccion3">
+        <div class="wrap">
+            <div class="texto2" >
+            <h1>Fotografía de Productos</h1> 
+            <p>En este apartado puedes apreciar algunos de mis trabajos fotográficos de productos a lo largo de mi carrera</p>
+        </div>
+
+
+        
+            <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/fotografia/cervezafnalnocopy.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/fotografia/FOTOCOMIDASOLA1final.png" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/fotografia/relojps.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/fotografia/fotocomidacongeladofnal.jpg" alt=""></div>
+            
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>  
+    </section>
+
+
+
+
+    <section class="ilustraciones" id="seccion4">
+        <div class="wrap">
+
+            
+
+            <div class="texto1" >
+             <h1>Ilustraciones</h1>
+
+            <p>Aquí podrás ver una recopilación de algunas de mis ilustraciones</p>
+            </div>
+
+              <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/ilustracion/dibujochicamascarafinal.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/ilustracion/dibujopulpo2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/ilustracion/dibujoalashueso.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/ilustracion/IMG_8672_2.jpg" alt=""></div>
+            
+            </div>
+            <div class="swiper-pagination"></div>
+
+            
+            </div>
+        </div>
+</section>
+
+  
+<section class="logotiposection" id="seccion5">
+    <div class="wrap">
+
+        
+
+        <div class="texto2">
+         <h1>Logotipo</h1>
+
+        <p> En este espacio podrás apreciar el diseño de logo realizado para un spa</p>
+        </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imgs/logo/logotipofondoazul.png" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/logo/logofondoblanco.png" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/logo/logoblancoynegro.PNG" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/logo/mockupbolsafnal.jpg" alt=""></div>
+                
+                </div>
+                <div class="swiper-pagination"></div>
+        
+        </div>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>
